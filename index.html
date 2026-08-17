@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon ball Z</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Cabeçalho com Menu Flexbox e Hamburguer Responsivo -->
+  <header class="topo-site">
+    <nav class="menu-principal">
+      <h1 class="logo">Dragon ball a origem</h1>
+
+      <!-- Controle do Menu Hambúrguer (CSS puro) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="links-menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#historia">historia</a></li>
+        <li><a href="#Vilão">Monstro inicial</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal com CSS Grid -->
+  <main class="container-principal" id="historia">
+    <h2 class="titulo-secao">historia</h2>
+
+    <div class="grade-portal">
+      <!-- Notícia em Destaque Principal -->
+      <article class="card-noticia destaque-principal">
+        <span class="tag-categoria">inicio de tudo</span>
+        <h3>Como o Goku chegou na Terra</h3>
+        <p>O pai e a mãe de Goku sabiam que o planeta deles seria destruido então eles colocaram o Goku em uma nave e mandaram para um planeta consideravel pacífico</p>
+        <a href="#" class="btn-leia-mais">Leia mais</a>
+      </article>
+
+      <!-- Notícias Secundárias -->
+      <article class="card-noticia">
+        <span class="tag-categoria">Com quem ele viveu</span>
+        <h3>Com quem o Goku viveu quando caiu na Terra?</h3>
+        <p>No momento que o Goku caiu na Terra ele foi encontrado por um velhinho chamado Gohan, ele cuidou de Goku, porém um dia em uma noite o Gohan morreu por um macaco gigante e o Goku n lembrava de nada.</p>
+        <a href="#" class="btn-leia-mais">Leia mais</a>
+      </article>
+
+      <article class="card-noticia">
+        <span class="tag-categoria">Quem era o macaco gigante</span>
+        <h3>Quem era o macaco gigante que matou son Gohan</h3>
+        <p>Quando o Goku olha para lua ele vira esse macaco gigante nomeado de oozaru, por conta da raça do Goku que são os saiyajins eles tem um rabo que ao olhar para lua ele vira esse monstro e perde o controle.</p>
+        <a href="#" class="btn-leia-mais">Leia mais</a>
+      </article>
+
+      <!-- Barra Lateral -->
+      <aside class="barra-lateral">
+        <h3>Mais Lidas</h3>
+        <ol class="lista-populares">
+          <li><a href="#">o que são saiyajins</a></li>
+          <li><a href="#">Como o planeta de origem do goku explodiu</a></li>
+          <li><a href="#">O que aconteceu depois que o vô do Goku morreu</a></li>
+          <li><a href="#">Com quem o Goku treinou</a></li>
+        </ol>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Seção de Formulário (Newsletter) -->
+  <section class="secao-newsletter" id="newsletter">
+    <div class="container-newsletter">
+      <h2>Receba as Notícias em Primeira Mão de Dragon ball</h2>
+      <p>Cadastre seu e-mail para receber boletins diários com as principais novidades de dragon ball.</p>
+
+      <form class="form-newsletter">
+        <div class="campo-grupo">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <button type="submit" class="btn-enviar">Inscrever-se</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé Semântico -->
+  <footer class="rodape-site" id="contato">
+    <p>&copy; 2026 Portal de Notícias de Dragon ball - Todos os direitos reservados.</p>
+    <p>Desenvolvido pelo programador João Pedro.</p>
+  </footer>
+
+</body>
+</html>
